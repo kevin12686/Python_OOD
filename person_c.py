@@ -18,6 +18,9 @@ class Person:
     def health_check(self):
         return self.weight, self.height
 
+    def house(self):
+        print('No money')
+
 
 def bmi(w, h):
     print('BMI: %f' % (w / (h / 100) ** 2))
@@ -50,3 +53,4 @@ if __name__ == '__main__':
     p3.speak()
     w, h = p3.health_check()
     bmi(w, h)
+    p3.house()
